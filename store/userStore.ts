@@ -7,7 +7,7 @@ type UserStore = {
   toggleHasOnboarded: () => void;
 };
 
-export const useUserStore = create<UserStore>(
+export const useUserStore = create(
   persist<UserStore>(
     (set) => ({
       hasFinishedOnboarding: false,

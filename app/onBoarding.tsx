@@ -1,3 +1,4 @@
+import { PlantlyButton } from "@/components/PlantlyButton";
 import { useUserStore } from "@/store/userStore";
 import { theme } from "@/theme";
 import { useRouter } from "expo-router";
@@ -12,7 +13,7 @@ export default function OnboardingScreen() {
   };
   return (
     <View style={styles.container}>
-      <Button title="Let me in!" onPress={handlePress} />
+      <PlantlyButton title="Let me in!" onPress={handlePress} />
     </View>
   );
 }
