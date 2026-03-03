@@ -4,4 +4,5 @@ export const theme = {
   colorLeafyGreen: "#206a42",
   colorAppleGreen: "#29b365",
   colorLimeGreen: "#d0e57e",
+  colorLightGrey: "#eee",
 };

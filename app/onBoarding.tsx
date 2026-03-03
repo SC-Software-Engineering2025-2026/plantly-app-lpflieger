@@ -37,6 +37,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-evenly",
     alignContent: "center",
     backgroundColor: theme.colorWhite,
+    paddingHorizontal: 8,
   },
   text: {
     fontSize: 24,
