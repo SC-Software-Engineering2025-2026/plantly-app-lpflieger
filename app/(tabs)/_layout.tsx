@@ -1,4 +1,4 @@
-import { Link, Redirect, Stack, Tabs } from "expo-router";
+import { Link, Redirect, SplashScreen, Stack, Tabs } from "expo-router";
 import { Entypo, Feather } from "@expo/vector-icons";
 import { theme } from "@/theme";
 import { useUserStore } from "@/store/userStore";
@@ -6,6 +6,7 @@ import AntDesign from "@expo/vector-icons/AntDesign";
 import { Pressable } from "react-native";
 
 export default function Layout() {
+  SplashScreen.hideAsync();
   const hadFinishedOnboarding = useUserStore(
     (state) => state.hasFinishedOnboarding,
   );
