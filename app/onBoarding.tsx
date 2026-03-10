@@ -2,7 +2,14 @@ import { PlantlyButton } from "@/components/PlantlyButton";
 import { useUserStore } from "@/store/userStore";
 import { theme } from "@/theme";
 import { useRouter } from "expo-router";
-import { StyleSheet, Text, Button, StatusBar, View } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  Button,
+  StatusBar,
+  View,
+  Platform,
+} from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import { PlantlyImage } from "@/components/plantlyImage";
 
@@ -50,8 +57,12 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   tagline: {
-    fontSize: 24,
+    fontSize: 30,
     color: theme.colorWhite,
     textAlign: "center",
+    fontFamily: Platform.select({
+      ios: "Caveat_Regular",
+      android: "Caveat_400Regular",
+    }),
   },
 });
