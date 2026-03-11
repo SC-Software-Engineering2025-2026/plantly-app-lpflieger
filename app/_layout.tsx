@@ -10,7 +10,7 @@ export default function Layout() {
   useEffect(() => {
     QuickActions.setItems([
       {
-        title: "Add a plane",
+        title: "Add a plant",
         icon: Platform.OS === "ios" ? "symbol:leaf" : "leaf",
         id: "0",
         params: { href: "/new" },

@@ -6,7 +6,7 @@ import AntDesign from "@expo/vector-icons/AntDesign";
 import { Pressable } from "react-native";
 
 export default function Layout() {
-  SplashScreen.hideAsync();
+
   const hadFinishedOnboarding = useUserStore(
     (state) => state.hasFinishedOnboarding,
   );
@@ -28,7 +28,7 @@ export default function Layout() {
             <Link href="/new" asChild>
               <Pressable style={{ marginRight: 18 }} hitSlop={20}>
                 <AntDesign
-                  name="pluscircleo"
+                  name="plus-circle"
                   size={24}
                   color={theme.colorGreen}
                 />

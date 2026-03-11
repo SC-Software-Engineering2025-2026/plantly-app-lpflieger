@@ -3,6 +3,10 @@ import { AntDesign } from "@expo/vector-icons";
 import { Link, Stack } from "expo-router";
 import { Pressable } from "react-native";
 
+export const unstable_settings = {
+  initalRouteName: "index",
+};
+
 export default function Layout() {
   return (
     <Stack>
@@ -14,7 +18,7 @@ export default function Layout() {
             <Link href="/new" asChild>
               <Pressable hitSlop={20}>
                 <AntDesign
-                  name="pluscircleo"
+                  name="plus-circle"
                   size={24}
                   color={theme.colorGreen}
                 />
